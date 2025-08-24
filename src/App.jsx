@@ -1,5 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import celebration from "../assets/celebration.gif";
+import tort from "../assets/tort.jpg";
+import party_theme from "../assets/party_theme.jpg";
+import present from "../assets/present.jpeg";
+import happy_bday from "../assets/happy_bday.gif";
+import daschund from "../assets/daschund.gif";
 
 const LandingPage = ({ setCurrentView }) => {
   const [noButtonText, setNoButtonText] = useState("Nie");
@@ -24,7 +30,7 @@ const LandingPage = ({ setCurrentView }) => {
     <div>
       <h1>Urodziny Elizki</h1>
       <p>Witaj na stronie urodzinowej Elizki!</p>
-      <img src="../assets/daschund.gif" alt="Birthday Daschund" />
+      <img src={daschund} alt="Birthday Daschund" />
       <p>Czy jesteś gotowa, żeby świętować?</p>
       <p>Tylko spróbuj wybrać nie!</p>
       <button id="yes-button" onClick={handleYesClick}>
@@ -46,7 +52,7 @@ const MainPage = ({ setCurrentView }) => {
   return (
     <div>
       <h1>Tak??? To świętujemy !!!</h1>
-      <img src="./src/assets/celebration.gif" alt="Celebration" />
+      <img src={celebration} alt="Celebration" />
       <br />
       <button onClick={() => setCurrentView("cake")}>Dalej</button>
     </div>
@@ -57,7 +63,7 @@ const CakePage = ({ setCurrentView }) => {
   return (
     <div>
       <h1>To jest twój tort</h1>
-      <img src="./src/assets/tort.jpg" alt="Birthday Cake" />
+      <img src={tort} alt="Birthday Cake" />
       <br />
       <p> (jest w stylu SATC....) </p>
       <button onClick={() => setCurrentView("party")}>Następna strona</button>
@@ -69,12 +75,7 @@ const PartyPage = ({ setCurrentView }) => {
   return (
     <div>
       <h1>To jest twoja impreza</h1>
-      <img
-        src="./src/assets/party_theme.jpg"
-        alt="Birthday Party"
-        width="400"
-        height="automatic"
-      />
+      <img src={party_theme} alt="Birthday Party" width="400" height="automatic" />
       <br />
       <p> (tyle że to vision board....) </p>
       <button onClick={() => setCurrentView("present")}>Prezent</button>
@@ -86,12 +87,7 @@ const PresentPage = ({ setCurrentView }) => {
   return (
     <div>
       <h1>To jest twój prezent</h1>
-      <img
-        src="./src/assets/present.jpeg"
-        alt="Present"
-        width="700"
-        height="automatic"
-      />
+      <img src={present} alt="Present" width="700" height="automatic" />
       <br />
       <p>
         {" "}
@@ -108,7 +104,7 @@ const WishesPage = ({ setCurrentView }) => {
     <div>
       <h1>Wszystkiego najlepszego Elizka!</h1>
       <img
-        src="./src/assets/happy_bday.gif"
+        src={happy_bday}
         alt="Birthday Wishes"
         width="400"
         height="automatic"
