@@ -24,7 +24,7 @@ const LandingPage = ({ setCurrentView }) => {
     <div>
       <h1>Urodziny Elizki</h1>
       <p>Witaj na stronie urodzinowej Elizki!</p>
-      <img src="./src/assets/daschund.gif" alt="Birthday Daschund" />
+      <img src="src/assets/daschund.gif" alt="Birthday Daschund" />
       <p>Czy jesteś gotowa, żeby świętować?</p>
       <p>Tylko spróbuj wybrać nie!</p>
       <button id="yes-button" onClick={handleYesClick}>
