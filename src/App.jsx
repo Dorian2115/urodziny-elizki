@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import celebration from "../assets/celebration.gif";
-import tort from "../assets/tort.jpg";
-import party_theme from "../assets/party_theme.jpg";
-import present from "../assets/present.jpeg";
-import happy_bday from "../assets/happy_bday.gif";
-import daschund from "../assets/daschund.gif";
+import celebration from "./assets/celebration.gif";
+import tort from "./assets/tort.jpg";
+import party_theme from "./assets/party_theme.jpg";
+import present from "./assets/present.jpeg";
+import happy_bday from "./assets/happy_bday.gif";
+import daschund from "./assets/daschund.gif";
 
 const LandingPage = ({ setCurrentView }) => {
   const [noButtonText, setNoButtonText] = useState("Nie");
@@ -91,7 +91,7 @@ const PresentPage = ({ setCurrentView }) => {
       <br />
       <p>
         {" "}
-        (niestety nie mogę go tu wysłać, anie nie stać mnie na niego
+        (niestety nie mogę go tu wysłać, ani nie stać mnie na niego
         jeszcze....){" "}
       </p>
       <button onClick={() => setCurrentView("wishes")}>Życzenia</button>
